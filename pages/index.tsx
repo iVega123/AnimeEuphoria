@@ -15,20 +15,20 @@ export default function HomePage() {
     <div className={classes.wrapper}>
       <Paper className={classes.form} radius={0} p={30}>
         <Title order={2} className={classes.title} ta="center" mt="md" mb={50}>
-          Welcome back to Mantine!
+          Bem vindo ao Anime Euphoria!
         </Title>
 
-        <TextInput label="Email address" placeholder="hello@gmail.com" size="md" />
-        <PasswordInput label="Password" placeholder="Your password" mt="md" size="md" />
-        <Checkbox label="Keep me logged in" mt="xl" size="md" />
+        <TextInput label="Endereço de email" placeholder="hello@gmail.com" size="md" />
+        <PasswordInput label="Senha" placeholder="Sua senha" mt="md" size="md" />
+        <Checkbox label="Me mantenha logado" mt="xl" size="md" />
         <Button fullWidth mt="xl" size="md">
-          Login
+          Logar
         </Button>
 
         <Text ta="center" mt="md">
-          Don&apos;t have an account?{' '}
+          Não tem uma conta?{' '}
           <Anchor<'a'> href="#" fw={700} onClick={(event) => event.preventDefault()}>
-            Register
+            Registre-se
           </Anchor>
         </Text>
       </Paper>
