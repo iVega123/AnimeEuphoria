@@ -1,5 +1,8 @@
-import { createTheme } from '@mantine/core';
+import { DEFAULT_THEME, createTheme } from '@mantine/core';
 
 export const theme = createTheme({
-  /* Put your mantine theme override here */
+  fontFamily: "Pixelify Sans",
+  headings: {
+    fontFamily: `"Pixelify Sans", ${DEFAULT_THEME.fontFamily}`,
+  },
 });

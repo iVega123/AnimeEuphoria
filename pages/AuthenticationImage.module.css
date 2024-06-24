@@ -1,17 +1,16 @@
 .wrapper {
-    min-height: rem(900px);
-    background-size: 1930px 900px;
-    background-image: url(https://w.wallha.com/ws/13/YFHzeabx.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: rem(945px);
+    background-size: 100%;
+    background-image: url(https://wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-13.gif);
   }
   
   .form {
-    border-right: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-7));
-    min-height: rem(900px);
+    min-height: rem(600px);
     max-width: rem(450px);
-    padding-top: rem(80px);
-    background-size: 450px 900px;
-    background-image: url(https://img.freepik.com/fotos-premium/animegirlinbikini-anime-girl-041_976118-37.jpg?w=740);
-  
+    
     @media (max-width: $mantine-breakpoint-sm) {
       max-width: 100%;
     }
@@ -20,6 +19,6 @@
   .title {
     color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
     font-family:
-      Greycliff CF,
+      "Pixelify Sans",
       var(--mantine-font-family);
   }

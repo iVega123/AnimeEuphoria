@@ -13,7 +13,7 @@ import classes from './AuthenticationImage.module.css';
 export default function HomePage() {
   return (
     <div className={classes.wrapper}>
-      <Paper className={classes.form} radius={0} p={30}>
+      <Paper className={classes.form} shadow="xl" radius={"xl"} p={"xl"} >
         <Title order={2} className={classes.title} ta="center" mt="md" mb={50}>
           Bem vindo ao Anime Euphoria!
         </Title>

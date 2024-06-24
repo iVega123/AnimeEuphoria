@@ -6,8 +6,11 @@ import { theme } from '../theme';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <MantineProvider theme={theme}>
+    <MantineProvider defaultColorScheme='dark' theme={theme}>
       <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet" />
         <title>Mantine Template</title>
         <meta
           name="viewport"
