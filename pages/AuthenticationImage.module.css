@@ -2,18 +2,35 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: rem(945px);
-    background-size: 100%;
+    min-height: rem(920px);
+    background-size: 1950px 920px;
     background-image: url(https://wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-13.gif);
+    background-repeat: no-repeat;
+
   }
   
   .form {
     min-height: rem(600px);
     max-width: rem(450px);
     
-    @media (max-width: $mantine-breakpoint-sm) {
+    @media (max-width: 425px) {
       max-width: 100%;
+      min-height: rem(500px);
+      max-width: rem(350px);
     }
+    
+    @media (max-width: 320px) {
+      max-width: 100%;
+      min-height: rem(300px);
+      max-width: rem(200px);
+    }
+
+    @media (max-width: 375px) {
+      max-width: 100%;
+      min-height: rem(400px);
+      max-width: rem(300px);
+    }
+
   }
   
   .title {
