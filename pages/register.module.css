@@ -1,0 +1,105 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+  
+.video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+}
+
+@media (min-width: 2560px) {
+  .video {
+    display: block;
+  }
+  .wrapper {
+    background-image: none;
+  }
+}
+
+@media (max-width: 2559px) {
+  .video {
+    display: none;
+  }
+  .wrapper {
+    background-image: url('https://wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-13.gif');
+  }
+}
+  
+.form {
+  min-height: 600px;
+  max-width: 100px;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 425px) {
+    max-width: 350px;
+    min-height: 500px;
+  }
+
+  @media (max-width: 320px) {
+    max-width: 200px;
+    min-height: 300px;
+  }
+
+  @media (max-width: 375px) {
+    max-width: 300px;
+    min-height: 400px;
+  }
+
+  @media (min-width: 2560px) {
+    min-width: 1200px;
+    min-height: 600px;
+    padding: 4rem !important;
+  }
+}
+
+.title {
+  font-family: "Pixelify Sans", var(--mantine-font-family);
+}
+
+@media (min-width: 2560px) {
+  .title {
+    font-size: 4rem;
+  }
+  .textInputLabel {
+    font-size: 2rem;
+    align-self: center;
+  }
+  .textCheckboxIcon {
+    --checkbox-size: var(--checkbox-size-xl);
+  }
+  .textInputInput {
+    --input-height: var(--input-height-xl) !important;
+    --input-fz: var(--mantine-font-size-xl) !important;
+    font-size: 2rem;
+  }
+  .AccountText {
+    font-size: 2rem
+  }
+  .buttonRoot {
+    --button-height: var(--button-height-xl) !important;
+    --button-padding-x: var(--button-padding-x-xl) !important;
+    --button-color: var(--mantine-color-white) !important;
+    margin-top: var(--mantine-spacing-xl) !important;
+  }
+  .buttonLabel {
+    font-size: 2.5rem;
+  }
+}
+  

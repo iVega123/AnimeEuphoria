@@ -8,7 +8,7 @@ import {
   Text,
   Anchor,
 } from '@mantine/core';
-import classes from './AuthenticationImage.module.css';
+import classes from './register.module.css';
 
 
 export default function HomePage() {
@@ -20,7 +20,7 @@ export default function HomePage() {
         </Title>
         <TextInput classNames={{ label: classes.textInputLabel, input: classes.textInputInput }}  label="Endereço de email" placeholder="hello@gmail.com" size="md" />
         <PasswordInput classNames={{ label: classes.textInputLabel, input: classes.textInputInput}} label="Senha" placeholder="Sua senha" mt="md" size="xl" />
-        <Checkbox classNames={{labelWrapper: classes.textInputLabel, inner: classes.textCheckboxIcon}} label="Mantenha-me logado" mt="xl" size="md" />
+        <Checkbox classNames={{labelWrapper: classes.textInputLabel, inner: classes.textCheckboxIcon}} label="Me mantenha logado" mt="xl" size="md" />
         <Button classNames={{label: classes.buttonLabel, root: classes.buttonRoot}} fullWidth mt="xl" size="md">
           Logar
         </Button>
@@ -37,3 +37,4 @@ export default function HomePage() {
     </div>
   );
 }
+  
