@@ -25,7 +25,7 @@ export default function HomePage() {
           Logar
         </Button>
         <Text className={classes.AccountText} ta="center" mt="md">
-          Não tem uma conta?{' '}
+          Não possui uma conta?{' '}
           <Anchor<'a'> href="#" fw={700} onClick={(event) => event.preventDefault()} className={classes.AccountText}>
             Registre-se
           </Anchor>

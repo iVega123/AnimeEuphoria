@@ -20,14 +20,13 @@ export default function HomePage() {
         </Title>
         <TextInput classNames={{ label: classes.textInputLabel, input: classes.textInputInput }}  label="Endereço de email" placeholder="hello@gmail.com" size="md" />
         <PasswordInput classNames={{ label: classes.textInputLabel, input: classes.textInputInput}} label="Senha" placeholder="Sua senha" mt="md" size="xl" />
-        <Checkbox classNames={{labelWrapper: classes.textInputLabel, inner: classes.textCheckboxIcon}} label="Me mantenha logado" mt="xl" size="md" />
         <Button classNames={{label: classes.buttonLabel, root: classes.buttonRoot}} fullWidth mt="xl" size="md">
-          Logar
+          Registrar-se
         </Button>
         <Text className={classes.AccountText} ta="center" mt="md">
-          Não tem uma conta?{' '}
+          Já possui uma conta?{' '}
           <Anchor<'a'> href="#" fw={700} onClick={(event) => event.preventDefault()} className={classes.AccountText}>
-            Registre-se
+            Logar
           </Anchor>
         </Text>
       </Paper>

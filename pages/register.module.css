@@ -40,15 +40,16 @@
 }
   
 .form {
-  min-height: 600px;
-  max-width: 100px;
+  min-height: 400px;
+  min-width: 650px;
   padding: 2rem;
   border-radius: 1rem;
   position: relative;
   z-index: 1;
-
+  
   @media (max-width: 425px) {
-    max-width: 350px;
+    max-width: 400px;
+    min-width: 350px;
     min-height: 500px;
   }
 
@@ -80,9 +81,6 @@
   .textInputLabel {
     font-size: 2rem;
     align-self: center;
-  }
-  .textCheckboxIcon {
-    --checkbox-size: var(--checkbox-size-xl);
   }
   .textInputInput {
     --input-height: var(--input-height-xl) !important;
