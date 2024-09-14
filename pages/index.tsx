@@ -9,6 +9,7 @@ import {
   Anchor,
 } from '@mantine/core';
 import classes from './AuthenticationImage.module.css';
+import { icons } from '@tabler/icons-react';
 
 
 export default function HomePage() {
@@ -29,6 +30,9 @@ export default function HomePage() {
           <Anchor<'a'> href="#" fw={700} onClick={(event) => event.preventDefault()} className={classes.AccountText}>
             Registre-se
           </Anchor>
+          <Button classNames={{label: classes.buttonLabel, root: classes.buttonRoot2}} fullWidth mt="xl" size="md">
+          Logar com Facebook
+        </Button>
         </Text>
       </Paper>
       <video id="video" className={classes.video} autoPlay loop muted playsInline>
